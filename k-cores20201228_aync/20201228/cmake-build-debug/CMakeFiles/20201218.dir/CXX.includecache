@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/luowei/Desktop/C++/k-cores-lw/k-cores20201228_aync/20201228/Graph.h
+
+/Users/luowei/Desktop/C++/k-cores-lw/k-cores20201228_aync/20201228/Person.h
+
+/Users/luowei/Desktop/C++/k-cores-lw/k-cores20201228_aync/20201228/Store.h
+
+/Users/luowei/Desktop/C++/k-cores-lw/k-cores20201228_aync/20201228/main.cpp
+iostream
+-
+vector
+-
+list
+-
+fstream
+-
+time.h
+-
+Person.h
+/Users/luowei/Desktop/C++/k-cores-lw/k-cores20201228_aync/20201228/Person.h
+Store.h
+/Users/luowei/Desktop/C++/k-cores-lw/k-cores20201228_aync/20201228/Store.h
+Graph.h
+/Users/luowei/Desktop/C++/k-cores-lw/k-cores20201228_aync/20201228/Graph.h
+subGraph.h
+/Users/luowei/Desktop/C++/k-cores-lw/k-cores20201228_aync/20201228/subGraph.h
+
+/Users/luowei/Desktop/C++/k-cores-lw/k-cores20201228_aync/20201228/subGraph.h
+

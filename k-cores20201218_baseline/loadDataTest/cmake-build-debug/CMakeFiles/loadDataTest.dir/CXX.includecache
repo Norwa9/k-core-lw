@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/luowei/Desktop/k-cores20201218/loadDataTest/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+iomanip
+-
+

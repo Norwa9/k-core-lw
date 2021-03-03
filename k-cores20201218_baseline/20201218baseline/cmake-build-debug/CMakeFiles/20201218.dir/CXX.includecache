@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/luowei/Desktop/k-cores20201218_baseline/20201218baseline/Graph.h
+
+/Users/luowei/Desktop/k-cores20201218_baseline/20201218baseline/Person.h
+
+/Users/luowei/Desktop/k-cores20201218_baseline/20201218baseline/Store.h
+
+/Users/luowei/Desktop/k-cores20201218_baseline/20201218baseline/main.cpp
+iostream
+-
+vector
+-
+list
+-
+fstream
+-
+time.h
+-
+Person.h
+/Users/luowei/Desktop/k-cores20201218_baseline/20201218baseline/Person.h
+Store.h
+/Users/luowei/Desktop/k-cores20201218_baseline/20201218baseline/Store.h
+Graph.h
+/Users/luowei/Desktop/k-cores20201218_baseline/20201218baseline/Graph.h
+subGraph.h
+/Users/luowei/Desktop/k-cores20201218_baseline/20201218baseline/subGraph.h
+
+/Users/luowei/Desktop/k-cores20201218_baseline/20201218baseline/subGraph.h
+

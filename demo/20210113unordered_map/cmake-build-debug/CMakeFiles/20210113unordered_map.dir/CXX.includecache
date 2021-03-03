@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/luowei/Desktop/C++/k-cores-lw/demo/20210113unordered_map/graph.cpp
+graph.h
+/Users/luowei/Desktop/C++/k-cores-lw/demo/20210113unordered_map/graph.h
+
+/Users/luowei/Desktop/C++/k-cores-lw/demo/20210113unordered_map/graph.h
+iostream
+-
+unordered_map
+-
+map
+-
+string
+-
+istream
+-
+fstream
+-
+
+/Users/luowei/Desktop/C++/k-cores-lw/demo/20210113unordered_map/main.cpp
+iostream
+-
+unordered_map
+-
+map
+-
+string
+-
+graph.h
+/Users/luowei/Desktop/C++/k-cores-lw/demo/20210113unordered_map/graph.h
+
