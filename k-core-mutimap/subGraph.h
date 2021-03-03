@@ -10,9 +10,13 @@
 using namespace std;
 class subGraph: public Graph{
 public:
-    void initSubGraph(const Graph &G,Store &store);
-    void clearEdgesOfV(int v);
+    void initSubgraph(const Graph &G,Store &store);
+
+    void generateEdgesFromGraph(const Graph &G,Store &store);
+
     void updateSubGraph(const Graph &G,Store &store);
+    void clearEdgesOfV(int v);
+
 };
 
 

@@ -44,7 +44,7 @@ void subGraph::updateSubGraph(const Graph &G,Store &store){
         v = (*p).returnPersonIndex();
         s = store.returnStoreIndex();
 
-        //行人v发生移动，其storeBelonged已经更新，商店的returnPeopleInScope在接下来更新：
+        //行人v发生移动，其storeBelonged已经更新，商店的PeopleInScope在接下来更新：
         vector<int>storeBelonged = people[v].returnStoreBelonged();
 
         bool wasPersonInStore = store.hasPerson(v);

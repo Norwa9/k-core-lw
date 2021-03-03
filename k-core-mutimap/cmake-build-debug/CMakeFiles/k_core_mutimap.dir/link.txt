@@ -1,1 +1,3 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/k_core_mutimap.dir/main.cpp.o CMakeFiles/k_core_mutimap.dir/Graph.cpp.o CMakeFiles/k_core_mutimap.dir/subGraph.cpp.o  -o k_core_mutimap 
+"D:\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\k_core_mutimap.dir/objects.a
+D:\CLION2~1.4\mingw64\bin\ar.exe cr CMakeFiles\k_core_mutimap.dir/objects.a @CMakeFiles\k_core_mutimap.dir\objects1.rsp
+D:\CLION2~1.4\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\k_core_mutimap.dir/objects.a -Wl,--no-whole-archive  -o k_core_mutimap.exe -Wl,--out-implib,libk_core_mutimap.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\k_core_mutimap.dir\linklibs.rsp

@@ -5,6 +5,9 @@
 #ifndef K_CORE_MUTIMAP_STORE_H
 #define K_CORE_MUTIMAP_STORE_H
 #include <vector>
+#include <algorithm>
+#include <math.h>
+
 using namespace std;
 extern double const d;//商店辐射半径
 class Store {

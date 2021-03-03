@@ -8,100 +8,100 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="k_core_mutimap">
-				<Option output="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/k_core_mutimap" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug"/>
+				<Option output="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/k_core_mutimap.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="D:/CLion 2020.2.4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/CLion 2020.2.4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2020.2.4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2020.2.4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/CLion 2020.2.4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/CLion 2020.2.4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 k_core_mutimap"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 k_core_mutimap"/>
+					<CompileFile command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="k_core_mutimap/fast">
-				<Option output="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/k_core_mutimap" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug"/>
+				<Option output="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/k_core_mutimap.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="D:/CLion 2020.2.4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/CLion 2020.2.4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2020.2.4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2020.2.4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/CLion 2020.2.4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/CLion 2020.2.4/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 k_core_mutimap/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 k_core_mutimap/fast"/>
+					<CompileFile command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLION2~1.4/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/Graph.cpp">
+		<Unit filename="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/Graph.cpp">
 			<Option target="k_core_mutimap"/>
 		</Unit>
-		<Unit filename="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/Graph.h">
+		<Unit filename="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/Graph.h">
 			<Option target="k_core_mutimap"/>
 		</Unit>
-		<Unit filename="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/Person.h">
+		<Unit filename="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/Person.h">
 			<Option target="k_core_mutimap"/>
 		</Unit>
-		<Unit filename="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/Store.h">
+		<Unit filename="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/Store.h">
 			<Option target="k_core_mutimap"/>
 		</Unit>
-		<Unit filename="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/main.cpp">
+		<Unit filename="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/main.cpp">
 			<Option target="k_core_mutimap"/>
 		</Unit>
-		<Unit filename="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/subGraph.cpp">
+		<Unit filename="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/subGraph.cpp">
 			<Option target="k_core_mutimap"/>
 		</Unit>
-		<Unit filename="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/subGraph.h">
+		<Unit filename="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/subGraph.h">
 			<Option target="k_core_mutimap"/>
 		</Unit>
-		<Unit filename="/Users/luowei/Desktop/C++/k-cores-lw/k-core-mutimap/CMakeLists.txt">
+		<Unit filename="C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

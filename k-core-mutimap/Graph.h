@@ -14,31 +14,33 @@
 
 #include "Store.h"
 #include "Person.h"
-extern vector<Person> people;
+//extern vector<Person> people;
 extern vector<Store> stores;       //存放所有的商店
 extern vector<Person> updatedPeople; //存放发生移动的行人
 using namespace std;
 
 class Graph {
 protected:
-    vector<int>people;//存放图内所有的行人序号
+    vector<Person>people;//存放图内所有的行人序号
     unordered_multimap<int,int>edges;//存放图内所有的边
 public:
     Graph(string filePathOfLocs, string filePathOfEdges);
 
-    void addEdge();
+    void addEdge(int u,int v);
 
-    void returnPeopleVector()const;
+    vector<Person> returnPeopleVector()const;
+
+    void updateDistribution(string filePathOfUpdatedLocs);
 
     unordered_multimap<int,int> returnEdgesOfV(int v) const;
+
+    const unordered_multimap<int,int>& returnEdges()const;
 
     void DFS(int v, vector<bool> &visited, vector<int> &vDegree, int k);
 
     void printKCores(int k,vector<int> QueryNodes);
 
-    unordered_multimap<int,int> generateSubEdge(Store &store) const;
 
-    void updateDistribution(string filePathOfUpdatedLocs);
 };
 
 

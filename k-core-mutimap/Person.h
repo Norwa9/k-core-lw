@@ -5,6 +5,7 @@
 #ifndef K_CORE_MUTIMAP_PERSON_H
 #define K_CORE_MUTIMAP_PERSON_H
 #include <vector>
+#include <iostream>
 using namespace std;
 
 class Person {
