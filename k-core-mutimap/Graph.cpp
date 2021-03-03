@@ -51,7 +51,7 @@ Graph::Graph(string filePathOfLocs, string filePathOfEdges) {
 }
 
 
-vector<Person> Graph::returnPeopleVector() const {
+vector<Person> Graph::peopleVector() const {
     return people;
 }
 
@@ -87,6 +87,19 @@ void Graph::updateDistribution(string filePathOfUpdatedLocs) {
         for (int storeIndex = 0; storeIndex < stores.size(); storeIndex++) {
             if (stores[storeIndex].isInScope(new_pX,new_pY)) {
                 people[personIndex].addStoreBelonged(storeIndex);
+            }
+        }
+    }
+}
+
+void Graph::delEdge(int u, int v) {
+    auto resultUedges = edges.equal_range(u);//resultU是u的所有出边
+    if(resultUedges.first != end(edges)){
+        //edgeU:u->v
+        for (auto edgeU = resultUedges.first ; edgeU != resultUedges.second; ++edgeU){
+            if(edgeU->second == v){
+                edges.erase(edgeU);
+                break;//运行到这里，表示u-v双向边已被删除，可直接退出for循环不必再遍历u的边
             }
         }
     }

@@ -1,3 +1,1 @@
-"D:\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\20201218.dir/objects.a
-D:\CLION2~1.4\mingw64\bin\ar.exe cr CMakeFiles\20201218.dir/objects.a @CMakeFiles\20201218.dir\objects1.rsp
-D:\CLION2~1.4\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\20201218.dir/objects.a -Wl,--no-whole-archive  -o 20201218.exe -Wl,--out-implib,lib20201218.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\20201218.dir\linklibs.rsp
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/20201218.dir/main.cpp.o  -o 20201218 

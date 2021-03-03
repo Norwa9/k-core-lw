@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Administrator/Desktop/k-core-lw/k-cores20201228_aync/20201228
+# Install script for directory: /Users/luowei/Desktop/C++/k-core-lw/k-cores20201228_aync/20201228
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/20201218")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Administrator/Desktop/k-core-lw/k-cores20201228_aync/20201228/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/luowei/Desktop/C++/k-core-lw/k-cores20201228_aync/20201228/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

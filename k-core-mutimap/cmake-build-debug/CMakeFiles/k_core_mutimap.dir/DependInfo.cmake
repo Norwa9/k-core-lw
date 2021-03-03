@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/Graph.cpp" "C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/CMakeFiles/k_core_mutimap.dir/Graph.cpp.obj"
-  "C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/main.cpp" "C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/CMakeFiles/k_core_mutimap.dir/main.cpp.obj"
-  "C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/subGraph.cpp" "C:/Users/Administrator/Desktop/k-core-lw/k-core-mutimap/cmake-build-debug/CMakeFiles/k_core_mutimap.dir/subGraph.cpp.obj"
+  "/Users/luowei/Desktop/C++/k-core-lw/k-core-mutimap/Graph.cpp" "/Users/luowei/Desktop/C++/k-core-lw/k-core-mutimap/cmake-build-debug/CMakeFiles/k_core_mutimap.dir/Graph.cpp.o"
+  "/Users/luowei/Desktop/C++/k-core-lw/k-core-mutimap/main.cpp" "/Users/luowei/Desktop/C++/k-core-lw/k-core-mutimap/cmake-build-debug/CMakeFiles/k_core_mutimap.dir/main.cpp.o"
+  "/Users/luowei/Desktop/C++/k-core-lw/k-core-mutimap/subGraph.cpp" "/Users/luowei/Desktop/C++/k-core-lw/k-core-mutimap/cmake-build-debug/CMakeFiles/k_core_mutimap.dir/subGraph.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

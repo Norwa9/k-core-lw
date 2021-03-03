@@ -263,6 +263,7 @@ void Graph::initGraphAndFirstDistribution(string filePathOfLocs, string filePath
 
 }
 
+//更新updatedPeople&更新移动过后的行人的storeBelonge
 void Graph::updateDistribution(string filePathOfUpdatedLocs) {
     //vector<Person>updatedPeople用来暂存当前时刻发生移动的行人信息;
     updatedPeople.clear();
@@ -283,7 +284,7 @@ void Graph::updateDistribution(string filePathOfUpdatedLocs) {
         //1.更新该行人坐标
         people[personIndex].setPersonNewPosition(pNewX, pNewY);//是否可以删除？
 
-        //2.清空该行人的storeBelonged并重新分配该行人：更新该行人的stroeBelonged向量和各商店的peopleInScope向量
+        //2.清空该行人的storeBelonged并重新分配该行人：更新该行人的stroeBelonged向量
         people[personIndex].clearStoreBelonged();
         for (int storeIndex = 0; storeIndex < stores.size(); storeIndex++) {
             if (isInScope(pNewX, pNewY, stores[storeIndex].returnStoreX(), stores[storeIndex].returnStoreY())) {

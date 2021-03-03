@@ -28,9 +28,11 @@ public:
 
     void addEdge(int u,int v);
 
-    vector<Person> returnPeopleVector()const;
+    vector<Person> peopleVector()const;
 
     void updateDistribution(string filePathOfUpdatedLocs);
+
+    void delEdge(int u,int v);
 
     unordered_multimap<int,int> returnEdgesOfV(int v) const;
 
