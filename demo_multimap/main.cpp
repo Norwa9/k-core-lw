@@ -59,9 +59,6 @@ void del(){
     }
 }
 
-void del_v2(){
-    //删除某个键的所有元素
-}
 
 int main()
 {

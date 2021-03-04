@@ -24,7 +24,7 @@ protected:
     vector<Person>people;//存放图内所有的行人序号
     unordered_multimap<int,int>edges;//存放图内所有的边
 public:
-    Graph(string filePathOfLocs, string filePathOfEdges);
+    void initGraphAndFirstDistribution(string filePathOfLocs, string filePathOfEdges);
 
     void addEdge(int u,int v);
 
@@ -33,8 +33,6 @@ public:
     void updateDistribution(string filePathOfUpdatedLocs);
 
     void delEdge(int u,int v);
-
-    unordered_multimap<int,int> returnEdgesOfV(int v) const;
 
     const unordered_multimap<int,int>& returnEdges()const;
 

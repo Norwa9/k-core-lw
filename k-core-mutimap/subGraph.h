@@ -15,7 +15,6 @@ public:
     void generateEdgesFromGraph(const Graph &G,Store &store);
 
     void updateSubGraph(const Graph &G,Store &store);
-    void clearEdgesOfV(int v);
 
 };
 

@@ -3,8 +3,8 @@
 //
 
 #include "Graph.h"
-Graph::Graph(string filePathOfLocs, string filePathOfEdges) {
-    //1、设置3个商店
+void Graph::initGraphAndFirstDistribution(string filePathOfLocs, string filePathOfEdges) {
+//1、设置3个商店
     int storesNum = 3;
     double s_X,s_Y;
     s_X=0,s_Y=0;
@@ -50,7 +50,6 @@ Graph::Graph(string filePathOfLocs, string filePathOfEdges) {
     cout<<"initGraphAndFirstDistribution Done!"<<endl;
 }
 
-
 vector<Person> Graph::peopleVector() const {
     return people;
 }
@@ -90,6 +89,7 @@ void Graph::updateDistribution(string filePathOfUpdatedLocs) {
             }
         }
     }
+    cout << "updateDistribution Done!"<<endl;
 }
 
 void Graph::delEdge(int u, int v) {
@@ -104,6 +104,108 @@ void Graph::delEdge(int u, int v) {
         }
     }
 }
+
+void Graph::DFS(int v, vector<bool> &visited, vector<int> &vDegree, int k) {
+    visited[v] = true;
+    auto edgesV = edges.equal_range(v);
+    for(auto edge = edgesV.first;edge != edgesV.second;++edge){
+        int u =  edge->second;
+        if(vDegree[v] < k){
+            vDegree[u] -= 1;
+        }
+        if(!visited[u]){
+            DFS(u,visited,vDegree,k);
+        }
+    }
+}
+
+void Graph::printKCores(int k, vector<int> QueryNodes) {
+    int numV = people.size();
+    vector<bool>visited(numV, false);
+    vector<int> vDegree(numV);
+
+    //初始化vDegree
+    for(int v = 0 ;v < numV ;v++){
+        vDegree[v] = edges.count(v);
+    }
+
+//    //查看vDegeree
+//    for (int i = 0; i < numV; ++i) {
+//        cout << "vDegree[" <<i<<"]"<<":"<<vDegree[i]<<endl;
+//    }
+//    cout <<endl;
+
+    //DFS k-core分解，计算vDegree
+    for (int v = 0; v < numV; ++v) {
+        if(!visited[v]){
+            DFS(v,visited,vDegree,k);
+        }
+    }
+
+    //根据VDegree计算所有的k-core并存入向量resultKcores
+    const int maxKcoreNum = 100;
+    vector<vector<int> >resultKcores(maxKcoreNum);//二维向量：存放k-core的向量
+    int kcoreNum = 0;
+    for(int v=0;v<numV;v++){
+        //只考虑那些在DFS处理过后，度仍然>=k的顶点
+        if(vDegree[v] >= k){
+            resultKcores[kcoreNum].push_back(v);
+            //遍历v的邻点。将所有与v相邻的，且度≥k的邻点u算入一个k-core里
+            auto edgesV = edges.equal_range(v);
+            for(auto edge = edgesV.first;edge != edgesV.second;++edge) {
+                int u = edge->second;
+                auto find_u = find(resultKcores[kcoreNum].begin(),resultKcores[kcoreNum].end(),u);
+                if(vDegree[u] >= k && find_u == resultKcores[kcoreNum].end())
+                    resultKcores[kcoreNum].push_back(u);
+            }
+            if(resultKcores[kcoreNum].size() > k){
+                kcoreNum++;
+                if(kcoreNum >= maxKcoreNum)
+                    break;
+            }else{
+                resultKcores[kcoreNum].clear();
+            }
+        }
+    }
+
+    //统计resultKcores中有效的k-core个数
+    kcoreNum = 0;
+    for(auto &p:resultKcores){
+        if(!p.empty()){
+            kcoreNum++;
+        } else
+        {
+            break;
+        }
+    }
+
+
+    //遍历resultKcores，输出含有Q全部元素的k-core
+    int index = 0;
+    for (int i = 0; i < kcoreNum; ++i) {
+        int count_q = 0;//统计Q的元素出现次数
+        for (int j = 0; j < QueryNodes.size(); ++j) {
+            auto find_q = find(resultKcores[i].begin(),resultKcores[i].end(),QueryNodes[j]);
+            if(find_q != resultKcores[i].end())
+                count_q++;
+        }
+
+        if(count_q < QueryNodes.size()){
+            continue;
+        }else{
+            cout <<"No"<<++index<<":"<<resultKcores[i][0]<<"->";
+            for (int k = 1; k < resultKcores[i].size(); ++k) {
+                if(k != resultKcores[i].size() - 1)
+                    cout << resultKcores[i][k] << "->";
+                else
+                    cout << resultKcores[i][k] <<endl;
+            }
+        }
+    }
+    cout << "printKCores Done!"<<endl;
+}
+
+
 
 
 
