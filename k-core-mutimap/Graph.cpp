@@ -47,7 +47,7 @@ void Graph::initGraphAndFirstDistribution(string filePathOfLocs, string filePath
     input_file.close();
 
 
-    cout<<"initGraphAndFirstDistribution Done!"<<endl;
+    cout<<"====initGraphAndFirstDistribution Done!"<<endl;
 }
 
 vector<Person> Graph::peopleVector() const {
@@ -89,7 +89,7 @@ void Graph::updateDistribution(string filePathOfUpdatedLocs) {
             }
         }
     }
-    cout << "updateDistribution Done!"<<endl;
+    cout << "====updateDistribution Done!"<<endl;
 }
 
 void Graph::delEdge(int u, int v) {
@@ -202,7 +202,7 @@ void Graph::printKCores(int k, vector<int> QueryNodes) {
             }
         }
     }
-    cout << "printKCores Done!"<<endl;
+    cout <<"====printKCores Done!"<<endl;
 }
 
 

@@ -40,7 +40,15 @@ algorithm
 math.h
 -
 
-/Users/luowei/Desktop/C++/k-core-lw/k-core-mutimap/subGraph.cpp
+/Users/luowei/Desktop/C++/k-core-lw/k-core-mutimap/main.cpp
+time.h
+-
+Person.h
+/Users/luowei/Desktop/C++/k-core-lw/k-core-mutimap/Person.h
+Store.h
+/Users/luowei/Desktop/C++/k-core-lw/k-core-mutimap/Store.h
+Graph.h
+/Users/luowei/Desktop/C++/k-core-lw/k-core-mutimap/Graph.h
 subGraph.h
 /Users/luowei/Desktop/C++/k-core-lw/k-core-mutimap/subGraph.h
 

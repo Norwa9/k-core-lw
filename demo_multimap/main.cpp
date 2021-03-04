@@ -19,9 +19,11 @@ void print(){
 
 void find(){
     //查找元素并输出+迭代器的使用
-    auto iter2 = myMap.find(2);//find()返回一个指向2的迭代器
+    auto iter2 = myMap.find(1);//find()返回一个指向2的迭代器
     if (iter2 != myMap.end())
         cout << endl<< iter2->first << "," << iter2->second << endl;
+    else
+        cout << "没有找到与参数匹配的元素";
 }
 
 void insert(){
@@ -62,9 +64,10 @@ void del(){
 
 int main()
 {
-    insert();
-    //数据集为7对数字：31,32,33,34,35,13,63
-    del();
-    print();
+//    insert();
+//    //数据集为7对数字：31,32,33,34,35,13,63
+//    del();
+//    print();
+    find();
 }
 

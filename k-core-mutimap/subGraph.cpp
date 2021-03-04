@@ -8,6 +8,7 @@ void subGraph::initSubgraph(const Graph &G, Store &store) {
     people = G.peopleVector();//意味着子图g仍然具有G的所有人的信息
     //初始化edges
     generateEdgesFromGraph(G,store);
+    cout << "====initSubgraph Done!"<<endl;
 }
 
 
@@ -28,12 +29,14 @@ void subGraph::generateEdgesFromGraph(const Graph &G, Store &store) {
                 auto findPerson = find(peopleOfSubgraph.begin(),peopleOfSubgraph.end(),edge->second);
                 if(findPerson!=peopleOfSubgraph.end()){
                     edges.insert(pair<int,int>(*v,edge->second));//子图中添加(v,u)
+                    if(testCount++ % 1000 == 0)
+                        cout << "进度:"<<testCount<<endl;
                 }
             }
         }
     }
 
-    cout << "generateEdgesFromGraph Done!"<<endl;
+    cout <<"====generateEdgesFromGraph Done!"<<endl;
 }
 
 void subGraph::updateSubGraph(const Graph &G, Store &store) {
@@ -78,7 +81,6 @@ void subGraph::updateSubGraph(const Graph &G, Store &store) {
                         edgeV++;//不满足if条件，遍历v的下一条出边
                     }
                 }
-                cout << "case 1.1 Done!"<<endl;
             }else{                              //1.2、在旧时刻该商店范围内有该行人&&在新时刻该行人不在商店范围内（需要更新store的PeopleInScope）
                 //1.已不在范围，故store移除v
                 store.delPersonFromScope(v);
@@ -92,7 +94,6 @@ void subGraph::updateSubGraph(const Graph &G, Store &store) {
                 }
                 //3.删除v的所有出边v->x
                 edges.erase(v);
-                cout << "case 1.2 Done!"<<endl;
             }
         } else{                                 //2.在旧时刻该商店范围内没有该行人v
             if(isPersonInStore){                //2.1、在旧时刻该商店范围内没有该行人&&在新时刻该行人处于商店范围内
@@ -108,14 +109,24 @@ void subGraph::updateSubGraph(const Graph &G, Store &store) {
                     }
                     edgeV++;
                 }
-                cout << "case 2.1 Done!"<<endl;
             }else{                             //2.2、在旧时刻该商店范围内没有该行人&&在新时刻该行人不在商店范围内
                 //do nothing
-                cout << "case 2.2 Done!"<<endl;
             }
         }
+
+//        if(wasPersonInStore){
+//            if(isPersonInStore)
+//                cout << "updata info:person index:"<<v<<" moved,he was in the scope of the store,now he is in the scope of the store"<<endl;
+//            else
+//                cout << "updata info:person index:"<<v<<" moved,he was in the scope of the store,but now he isn't in the scope of the store"<<endl;
+//        }else{
+//            if(isPersonInStore)
+//                cout << "updata info:person index:"<<v<<" moved,he wasn't in the scope of the store,but now he is in the scope of the store"<<endl;
+//            else
+//                cout << "updata info:person index:"<<v<<" moved,he wasn't in the scope of the store,and now he isn't in the scope of the store either"<<endl;
+//        }
     }
-    cout << "updateSubGraph Done!"<<endl;
+    cout << "====updateSubGraph Done!"<<endl;
 }
 
 
